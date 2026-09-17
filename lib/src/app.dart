@@ -48,7 +48,7 @@ class _LaunchGateState extends State<LaunchGate> {
     timer ??= Timer(
       MediaQuery.disableAnimationsOf(context)
           ? const Duration(milliseconds: 100)
-          : const Duration(milliseconds: 1700),
+          : const Duration(milliseconds: 450),
       () {
         if (mounted) setState(() => launched = true);
       },
@@ -171,7 +171,7 @@ class WelcomeScreen extends StatelessWidget {
           child: ConstrainedBox(
             constraints: BoxConstraints(minHeight: constraints.maxHeight),
             child: Align(
-              alignment: Alignment.topCenter,
+              alignment: Alignment.center,
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 480),
                 child: Padding(
