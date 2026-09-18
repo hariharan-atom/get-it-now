@@ -5,7 +5,7 @@
     <application
         android:label="GET IT NOW"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher_get_it_now">
         <activity
             android:name=".MainActivity"
             android:exported="true"
